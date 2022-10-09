@@ -4,7 +4,12 @@ function fillGrid(grid) {
   const newGrid = grid;
   for (let iIndex = 0; iIndex < grid.length; iIndex++) {
     for (let jIndex = 0; jIndex < grid.length; jIndex++) {
-      newGrid[iIndex][jIndex].isAlive = Math.round(Math.random());
+      const randomCellStatus = Math.round(Math.random());
+      let cellStatus = false;
+      if (randomCellStatus === 1) {
+        cellStatus = true;
+      }
+      newGrid[iIndex][jIndex].isAlive = cellStatus;
     }
   }
   return newGrid;

@@ -1,4 +1,6 @@
-// import CreateElement from "./CreateElement/CreateElement.js";
+import CreateElement from "./CreateElement/CreateElement.js";
 import createGrid from "./CreateElement/createGrid.js";
+import fillGrid from "./FillGrid/fillGrid.js";
 
-console.table(createGrid(4));
+const randomFilledGrid = fillGrid(newGrid);
+console.table(randomFilledGrid);

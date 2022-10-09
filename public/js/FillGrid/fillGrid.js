@@ -1,11 +1,12 @@
 // import createGrid from "../CreateElement/createGrid.js";
 
 function fillGrid(grid) {
-  grid[1][0].isAlive = true;
-  grid[1][1].isAlive = true;
-  grid[1][2].isAlive = true;
+  const newGrid = grid;
+  newGrid[1][0].isAlive = true;
+  newGrid[1][1].isAlive = true;
+  newGrid[1][2].isAlive = true;
 
-  return grid;
+  return newGrid;
 }
 
 export default fillGrid;

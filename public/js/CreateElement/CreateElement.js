@@ -6,7 +6,7 @@ class CreateElement {
   constructor(row, column) {
     this.row = row;
     this.column = column;
-    this.isAlive = false;
+    this.isAlive = 0;
   }
 }
 
